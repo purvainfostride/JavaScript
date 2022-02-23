@@ -1,0 +1,50 @@
+<html>
+<body>
+<h1> Javascript Variables <h1>
+<p id= "demo"></p>
+<p id= "demo1"></p>
+<p id= "demo2"></p>
+<script>
+var var1=1;
+var var2=100;
+var var2=1;
+var var3=var1*var2;
+document.getElementById("demo").innerHTML="The Value of var1 is: "+ var1+", The Value of var2 is: "+var2+", and the value of var3 is "+var3;
+try{
+let let1=1;
+let let2=100;
+let let2=1; // it wll work like let2=1 coz let variables can be updated but not re-declared
+let let3=let1*let2;
+document.getElementById("demo1").innerHTML="The Value of let1 is: "+ let1+", The Value of let2 is: "+let2+", and the value of let3 is "+let3;
+}
+catch(err){
+document.getElementById("demo1").innerHTML=err;
+}
+
+finally {
+let let1=1;
+let let2=100;
+let let3=let1*let2;
+document.getElementById("demo1").innerHTML="The Value of let1 is: "+ let1+", The Value of let2 is: "+let2+", and the value of let3 is "+let3;
+  }
+try{
+const const1=1;
+const const2=100;
+const const2= 1;
+const const3=const1*const2;       
+document.getElementById("demo2").innerHTML="The Value of const1 is: "+ const1+", The Value of const2 is: "+const2+", and the value of const3 is "+const3;
+}
+catch(err){
+document.getElementById("demo2").innerHTML=err;
+}
+finally {
+const const1=1;
+const const2=100;
+const const3=const1*const2;
+document.getElementById("demo2").innerHTML="The Value of const1 is: "+ const1+", The Value of const2 is: "+const2+", and the value of const3 is "+const3;
+  }
+
+
+</script>
+</body>
+</html>
